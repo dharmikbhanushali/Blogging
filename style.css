@@ -1,0 +1,121 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: black;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 627px;
+}
+
+legend{
+    margin-left: 10pt;
+    font-family: 'Alata', sans-serif;
+    color: black;
+    width: fit-content;
+    border-bottom: 1px solid black;
+    font-size: 15pt;
+}
+
+#login-form{
+    visibility: hidden;
+    animation-name: animdiv;
+    animation-duration: 3s;
+    margin-left: 37%;
+}
+
+#signup-form{
+    visibility: hidden;
+    animation-name: animdiv;
+    animation-duration: 3s;
+    margin-left: 37%;
+}
+
+@keyframes animdiv{
+    from {margin-left: 0%;}
+    to {margin-left: 37%;}
+}
+
+input{
+    border-radius: 5pt;
+}
+
+button{
+    border-radius: 5pt;
+}
+
+.ip{
+    background:white;
+    position: absolute;
+    margin-top: 10%;
+    margin-bottom: 10pt;
+    padding: 15pt 20pt 25pt 20pt;
+    border-radius: 5pt;
+}
+
+.ip>input{
+    width: 200pt;
+    height: 20pt;
+}
+
+.ip>button{
+    height: 27pt;
+}
+
+.ip>input,button{ 
+    font-family: 'Alata', sans-serif;
+    margin: 10pt 10pt 0pt 10pt;
+    border: 1px solid black; 
+    padding: 5px 10px 5px 10px; 
+    background: none;
+    font-size: 12pt;
+    display: block
+}
+
+.btn{
+    font-family: 'Alata', sans-serif;
+    margin: 10pt 10pt 0pt 10pt;
+    text-decoration: none;
+    border-radius: 5pt;
+    border: 1px solid black;
+    background:none;
+    color: black;
+    float: right;
+    font-size: 12pt;
+    padding: 5px 10px 5px 10px;
+    animation-name: animbtn;
+    animation-duration: 2s;
+}
+
+@keyframes animbtn{
+    from {opacity: 0%; color: white;}
+    to {opacity: 100%; color: black;}
+}
+
+.mbb{
+    background-image: url("mbb.jpg");
+}
+
+.doodle{
+    background-image: url("doodle.jpg");    
+}
+
+.lion{
+    position: relative;
+    background-image: url("babyyoda.jpg");    
+}
+
+.doodle-front{
+    background: url("doodle-front.png");
+}
